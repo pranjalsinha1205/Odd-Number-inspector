@@ -1,0 +1,56 @@
+x = int(input("Enter the odd number x: "))
+y = int(input("Enter the odd number y: "))
+z = int(input("Enter the odd number z: "))
+
+if x % 2 == 0 and y % 2 == 0 and z % 2 == 0 :
+  print("Invalid input, enter odd numbers in the given inputs")
+elif x % 2 == 0 and y % 2 == 0 :
+  if z % 2 == 0 :
+    print("Invalid input, enter odd numbers in the given inputs")
+  else :
+    print("Enter odd numbers in the 1st and 2nd inputs repectively")
+    print("Since the 1st and 2nd inputs are not odd, this means that the 3rd input", z, "is the highest odd number")
+elif z % 2 == 0 and y % 2 == 0 :
+  if x % 2 == 0 :
+    print("Invalid input, enter odd numbers in the given inputs")
+  else :
+    print("Invalid input, enter odd numbers in the 2nd and 3rd inputs repectively")
+    print("Since the 2nd and 3rd inputs are not odd, this means that the 1st input", x, "is the highest odd number")
+elif x % 2 == 0 and z % 2 == 0 :
+  if y % 2 == 0 :
+    print("Invalid input, enter odd numbers in the given inputs")
+  else :
+    print("Invalid input, enter odd numbers in the 1st and 3rd inputs repectively")
+    print("Since the 1st and 3rd inputs are not odd, this means that the 2nd input", y, "is the highest odd number")
+elif x % 2 == 0 and y > z :
+  print("Since input 1 is invalid", y, "is the highest odd number")
+elif x % 2 == 0 and z > y :
+  print("Since input 1 is invalid", z, "is the highest odd number")
+elif x % 2 == 0 and y == z :
+  print("Since input 1 is invalid and input 2 and 3 are equal, there is no GREATEST ODD NUMBER for this set of numbers")
+elif y % 2 == 0 and x > z :
+  print("Since input 2 is invalid", x, "is the highest odd number")
+elif y % 2 == 0 and z > x :
+  print("Since input 2 is invalid", z, "is the highest odd number")
+elif y % 2 == 0 and x == z :
+  print("Since input 2 is invalid and input 1 and 3 are equal, there is no GREATEST ODD NUMBER for this set of numbers")
+elif z % 2 == 0 and x > y :
+  print("Since input 3 is invalid", x, "is the highest odd number")
+elif z % 2 == 0 and y > x :
+  print("Since input 3 is invalid", y, "is the highest odd number")
+elif z % 2 == 0 and x == y :
+  print("Since input 3 is invalid and input 1 and 2 are equal, there is no GREATEST ODD NUMBER for this set of numbers")
+elif x > y and x > z :
+  print(x, "is the largest odd number amongst the three given numbers")
+elif y > x and y > z :
+  print(y, "is the largest odd number amongst the three given numbers")
+elif z > x and z > y :
+  print(z, "is the largest odd number amongst the three given numbers")
+elif x == y and x > z :
+  print("Since input 1 and 2 are equal and input 3 is smaller than them there is no GREATEST ODD NUMBER for this set of numbers")
+elif x == z and x > y :
+  print("Since input 1 and 3 are equal and input 2 is smaller than them there is no GREATEST ODD NUMBER for this set of numbers")
+elif z == y and z > x :
+  print("Since input 2 and 3 are equal and input 1 is smaller than them there is no GREATEST ODD NUMBER for this set of numbers")
+else :7
+  print("The input is invalid")
